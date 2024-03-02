@@ -25,7 +25,7 @@ services:
       - static:/frontend_static
   gateway:
     build: ./gateway/
-    volumes:
+    volumes: 
       - static:/staticfiles/
     ports:
       - 8000:80 
